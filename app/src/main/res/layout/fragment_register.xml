@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:text="Register"
+        android:textSize="23dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/username"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/register"
+        android:hint="Username"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/abu"
+        android:paddingLeft="25dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/username"
+        android:hint="Email"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/abu"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="25dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/phone"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/email"
+        android:hint="phone"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/abu"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="25dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/pasword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/phone"
+        android:hint="Password"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/abu"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="25dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pasword"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="10sp"
+        android:layout_marginLeft="35dp"
+        android:text="By checking the box you agree to our Terms and Conditions."/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_shpe"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/checkbox"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already Have an Account? Log in"
+        android:layout_below="@id/tombol"
+        android:paddingLeft="96dp"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
